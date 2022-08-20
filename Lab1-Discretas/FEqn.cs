@@ -25,9 +25,9 @@ namespace Lab1_Discretas
             // OpcControl = 1;
             LbR.Items.Clear();
             LbR.Items.Add("Para que x sea equivalente en esta ecuacion debe de tomar los siguientes valores");
-            for (int i = 0; i < 10; i += 2)
+            for (int i = 0; i < 9; i += 2)
             {
-                LbR.Items.Add(i.ToString() + "\t " + (i + 1).ToString() + "\t");
+                LbR.Items.Add(i.ToString() + "\t " + (i + 1).ToString());
 
             }
 
@@ -38,18 +38,7 @@ namespace Lab1_Discretas
         }
 
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            //OpcControl = 2;
-            LbR.Items.Clear();
-
-                LbR.Items.Add("Para que x sea equivalente en esta ecuacion su valor no debe ser ninguno de estos");
-                for (int k = 10; k < 20; k++)
-                {
-                    LbR.Items.Add(k.ToString() + "\t" + (k + 1).ToString() + "\t");
-                }
-
-            
-        }
+       
+       
     }
 }
