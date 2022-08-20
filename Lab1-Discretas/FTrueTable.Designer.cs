@@ -30,6 +30,7 @@ namespace Lab1_Discretas
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.TBcant = new System.Windows.Forms.TextBox();
             this.DGVtablaDeVerdad = new System.Windows.Forms.DataGridView();
@@ -64,17 +65,25 @@ namespace Lab1_Discretas
             this.DGVtablaDeVerdad.AllowUserToResizeColumns = false;
             this.DGVtablaDeVerdad.AllowUserToResizeRows = false;
             this.DGVtablaDeVerdad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGVtablaDeVerdad.DefaultCellStyle = dataGridViewCellStyle1;
             this.DGVtablaDeVerdad.Location = new System.Drawing.Point(15, 128);
             this.DGVtablaDeVerdad.Name = "DGVtablaDeVerdad";
             this.DGVtablaDeVerdad.ReadOnly = true;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGVtablaDeVerdad.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGVtablaDeVerdad.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DGVtablaDeVerdad.RowHeadersVisible = false;
             this.DGVtablaDeVerdad.Size = new System.Drawing.Size(420, 133);
             this.DGVtablaDeVerdad.TabIndex = 2;
@@ -137,7 +146,7 @@ namespace Lab1_Discretas
             this.Controls.Add(this.label1);
             this.Name = "FTrueTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FTrueTable";
+            this.Text = "Tabla de Verdad";
             this.Load += new System.EventHandler(this.FTrueTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVtablaDeVerdad)).EndInit();
             this.ResumeLayout(false);
