@@ -29,20 +29,63 @@ namespace Lab1_Discretas
         /// </summary>
         private void InitializeComponent()
         {
+            this.BTNeq1 = new System.Windows.Forms.RadioButton();
+            this.LbR = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // BTNeq1
+            // 
+            this.BTNeq1.AutoSize = true;
+            this.BTNeq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNeq1.Location = new System.Drawing.Point(29, 89);
+            this.BTNeq1.Name = "BTNeq1";
+            this.BTNeq1.Size = new System.Drawing.Size(362, 28);
+            this.BTNeq1.TabIndex = 0;
+            this.BTNeq1.Text = "(X<10 || X>20)  && !(X>=10 && X<=20)";
+            this.BTNeq1.UseVisualStyleBackColor = true;
+            this.BTNeq1.CheckedChanged += new System.EventHandler(this.BTNeq1_CheckedChanged);
+            // 
+            // LbR
+            // 
+            this.LbR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbR.FormattingEnabled = true;
+            this.LbR.ItemHeight = 20;
+            this.LbR.Location = new System.Drawing.Point(25, 166);
+            this.LbR.Name = "LbR";
+            this.LbR.Size = new System.Drawing.Size(681, 244);
+            this.LbR.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(564, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Demostrar que las siguientes ecuaciones son equivalentes ";
             // 
             // FEqn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(763, 433);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LbR);
+            this.Controls.Add(this.BTNeq1);
             this.Name = "FEqn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEqn";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.RadioButton BTNeq1;
+        private System.Windows.Forms.ListBox LbR;
+        private System.Windows.Forms.Label label1;
     }
 }
