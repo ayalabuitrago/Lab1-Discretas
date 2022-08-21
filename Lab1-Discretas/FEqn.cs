@@ -21,24 +21,36 @@ namespace Lab1_Discretas
 
         private void BTNeq1_CheckedChanged(object sender, EventArgs e)
         {
-
-            // OpcControl = 1;
+           
             LbR.Items.Clear();
-            LbR.Items.Add("Para que x sea equivalente en esta ecuacion debe de tomar los siguientes valores");
-            for (int i = 0; i < 9; i += 2)
+            LbR.Items.Add("Para que x sea equivalente en un intervalo de 0 a 100  debe de tomar los siguientes valores");
+            for (int i = 0; i <= 100; i ++ )
             {
-                LbR.Items.Add(i.ToString() + "\t " + (i + 1).ToString());
-
+                if (i < 10 || i >= 21)
+                {
+                    LbR.Items.Add(i.ToString() + "\t ");
+                }
+                
             }
+            
 
-            for (int j = 21; j < 100; j += 2)
-            {
-                LbR.Items.Add(j.ToString() + "\t " + (j + 1).ToString() + "\t");
-            }
+
+
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            LbR.Items.Clear();
+            LbR.Items.Add("Para que x sea equivalente en un intervalo de 0 a 100  debe de tomar los siguientes valores");
+            for (int i = 0; i <= 100; i++)
+            {
+                if (!(i >= 10 && i <=20))
+                {
+                    LbR.Items.Add(i.ToString() + "\t ");
+                }
 
-       
-       
+            }
+            LbR.Items.Add("Ambas ecuaciones deben tomar los mismos valores por tanto son equivalentes");
+        }
     }
 }
