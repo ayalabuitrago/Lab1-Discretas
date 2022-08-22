@@ -52,5 +52,7 @@ namespace Lab1_Discretas
             }
             LbR.Items.Add("Ambas ecuaciones deben tomar los mismos valores por tanto son equivalentes");
         }
+
+        
     }
 }
