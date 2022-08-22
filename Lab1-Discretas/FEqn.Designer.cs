@@ -30,9 +30,9 @@ namespace Lab1_Discretas
         private void InitializeComponent()
         {
             this.BTNeq1 = new System.Windows.Forms.RadioButton();
-            this.LbR = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.LbR = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BTNeq1
@@ -46,16 +46,6 @@ namespace Lab1_Discretas
             this.BTNeq1.Text = "(X<10 || X>20) ";
             this.BTNeq1.UseVisualStyleBackColor = true;
             this.BTNeq1.CheckedChanged += new System.EventHandler(this.BTNeq1_CheckedChanged);
-            // 
-            // LbR
-            // 
-            this.LbR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbR.FormattingEnabled = true;
-            this.LbR.ItemHeight = 20;
-            this.LbR.Location = new System.Drawing.Point(25, 246);
-            this.LbR.Name = "LbR";
-            this.LbR.Size = new System.Drawing.Size(681, 164);
-            this.LbR.TabIndex = 2;
             // 
             // label1
             // 
@@ -79,14 +69,26 @@ namespace Lab1_Discretas
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // LbR
+            // 
+            this.LbR.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LbR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbR.Location = new System.Drawing.Point(29, 237);
+            this.LbR.Multiline = true;
+            this.LbR.Name = "LbR";
+            this.LbR.ReadOnly = true;
+            this.LbR.Size = new System.Drawing.Size(693, 151);
+            this.LbR.TabIndex = 6;
+            this.LbR.UseSystemPasswordChar = true;
+            // 
             // FEqn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 425);
+            this.Controls.Add(this.LbR);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.LbR);
             this.Controls.Add(this.BTNeq1);
             this.Name = "FEqn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -99,8 +101,8 @@ namespace Lab1_Discretas
         #endregion
 
         private System.Windows.Forms.RadioButton BTNeq1;
-        private System.Windows.Forms.ListBox LbR;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TextBox LbR;
     }
 }

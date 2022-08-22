@@ -15,24 +15,25 @@ namespace Lab1_Discretas
         public FEqn()
         {
             InitializeComponent();
-            LbR.Items.Add("Las ecuaciones son equivalentes");
+            LbR.Text=("Las ecuaciones son equivalentes");
         }
         //int OpcControl;
 
         private void BTNeq1_CheckedChanged(object sender, EventArgs e)
         {
-           
-            LbR.Items.Clear();
-            LbR.Items.Add("Para que x sea equivalente en un intervalo de 0 a 100  debe de tomar los siguientes valores");
+            string s;
+            s="";
+            s+=String.Format("Para que x sea equivalente en un intervalo de 0 a 100  debe de tomar los siguientes valores\r\n");
             for (int i = 0; i <= 100; i ++ )
             {
                 if (i < 10 || i >= 21)
                 {
-                    LbR.Items.Add(i.ToString() + "\t ");
+                    s+=(i.ToString() + ", ");
                 }
                 
             }
-            
+            s += String.Format("\r\nAmbas ecuaciones deben tomar los mismos valores por tanto son equivalentes");
+            LbR.Text = s;
 
 
 
@@ -40,17 +41,19 @@ namespace Lab1_Discretas
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            LbR.Items.Clear();
-            LbR.Items.Add("Para que x sea equivalente en un intervalo de 0 a 100  debe de tomar los siguientes valores");
+            String s;
+            s="";
+            s +=String.Format("Para que x sea equivalente en un intervalo de 0 a 100  debe de tomar los siguientes valores:\r\n");
             for (int i = 0; i <= 100; i++)
             {
                 if (!(i >= 10 && i <=20))
                 {
-                    LbR.Items.Add(i.ToString() + "\t ");
+                    s+=(i.ToString() + ", ");
                 }
 
             }
-            LbR.Items.Add("Ambas ecuaciones deben tomar los mismos valores por tanto son equivalentes");
+            s +=String.Format("\r\nAmbas ecuaciones deben tomar los mismos valores por tanto son equivalentes");
+            LbR.Text=s;
         }
 
         
