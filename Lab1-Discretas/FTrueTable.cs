@@ -43,7 +43,7 @@ namespace Lab1_Discretas
             // validar formulario
             if (validateForm())
             {
-                if(cantidadProposiciones == 1)
+                if(cantidadProposiciones <= 1)
                 {
                     MessageBox.Show(
                         "La cantidad de proposiciones debe ser mayor a 1", 
