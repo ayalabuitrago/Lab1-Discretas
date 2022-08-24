@@ -45,14 +45,24 @@ namespace Lab1_Discretas
             {
                 if(cantidadProposiciones == 1)
                 {
-                    MessageBox.Show("La cantidad de proposiciones debe ser mayor a 1", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(
+                        "La cantidad de proposiciones debe ser mayor a 1", 
+                        "ERROR", 
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
                     TBcant.SelectAll();
                     return;
                 }
 
                 if(cantidadProposiciones > 9)
                 {
-                    MessageBox.Show("La cantidad de proposiciones no puede exceder a ", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(
+                        "La cantidad de proposiciones no puede exceder a 9", 
+                        "ERROR", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error
+                    );
                     TBcant.SelectAll();
                     return;
                 }

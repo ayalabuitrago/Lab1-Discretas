@@ -34,9 +34,6 @@ namespace Lab1_Discretas
             }
             s += String.Format("\r\nAmbas ecuaciones deben tomar los mismos valores por tanto son equivalentes");
             LbR.Text = s;
-
-
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -59,3 +56,7 @@ namespace Lab1_Discretas
         
     }
 }
+
+
+
+
